@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package>
+    <name>PlinioCardoso_Fortunus</name>
+    <version>2.0.0</version>
+    <stability>stable</stability>
+    <license>OSL</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Pagamento via Boleto Fortunus</summary>
+    <description>Permite que seus clientes finalizem a compra por boleto banc&#xE1;rio da Fortunus sem sair da loja. Para mais informa&#xE7;&#xF5;es sobre a Fortunus acesse http://www.fortunus.com.br</description>
+    <notes>- Finalizando compra pelo boleto banc&#xE1;rio&#xD;
+- Boleto na p&#xE1;gina de sucesso&#xD;
+- Informa&#xE7;&#xF5;es e link do boleto no pedido, dentro da administra&#xE7;&#xE3;o</notes>
+    <authors><author><name>Pl&#xED;nio Cardoso</name><user>PlinioCardoso</user><email>plynyo@gmail.com</email></author></authors>
+    <date>2014-12-01</date>
+    <time>01:24:53</time>
+    <contents><target name="magecommunity"><dir name="PlinioCardoso"><dir name="Fortunus"><dir name="Block"><file name="Callback.php" hash="85592f6037cc5c403a0fba29b55a6460"/><dir name="Form"><file name="Boleto.php" hash="9366b7267d701e86b35367e21a5097c7"/></dir><dir name="Info"><file name="Boleto.php" hash="c5c27d4f4732c302979afdbd8f8d3972"/></dir></dir><dir name="Helper"><file name="Data.php" hash="5dac1487206501a3d04038e47a5b849b"/></dir><dir name="Model"><file name="Abstract.php" hash="ed38344de923b71ba24146d5edab5876"/><dir name="Payment"><file name="Boleto.php" hash="e036f47abd90336f47595b9c4fb732f9"/></dir></dir><dir name="controllers"><file name="NotificationController.php" hash="c445cf2c1c3c6f4abec666fa3367f09e"/><file name="TestesController.php" hash="a5a5c2df1876c8b8f179ce9a0d1131b9"/></dir><dir name="etc"><file name="config.xml" hash="24279a8f89a6e9aedef0f2a51edb5a23"/><file name="system.xml" hash="48f2b4df7d400558d9b942e24a1bcf2e"/></dir></dir></dir></target><target name="magedesign"><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="template"><dir name="pliniocardoso_fortunus"><dir name="info"><file name="boleto.phtml" hash="e016430b71299bae88775d5571bbdd58"/></dir></dir></dir></dir></dir></dir><dir name="frontend"><dir name="base"><dir name="default"><dir name="layout"><file name="pliniocardoso_fortunus.xml" hash="020db55532dbd987dbe58132768e7801"/></dir><dir name="template"><dir name="pliniocardoso_fortunus"><dir name="checkout"><file name="success.phtml" hash="40cd8db20c9f24199f4eb23624a32267"/></dir></dir></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="PlinioCardoso_Fortunus.xml" hash="0326281a4ed4f5be38d0c007e9f54d64"/></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.3.0</min><max>5.5.0</max></php></required></dependencies>
+</package>

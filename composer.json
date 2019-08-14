@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/PlinioCardoso_Fortunus",
+    "type": "magento-module",
+    "license": "OSL",
+    "homepage": "",
+    "description": "Pagamento via Boleto Fortunus",
+    "authors": [
+    {
+        "name": "Pl\u00ednio Cardoso",
+        "email": "plynyo@gmail.com"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}

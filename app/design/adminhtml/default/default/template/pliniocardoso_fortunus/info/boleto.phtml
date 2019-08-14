@@ -1,0 +1,28 @@
+<strong><?php echo $this->escapeHtml($this->getMethod()->getTitle()) ?> (Fortunus)</strong>
+<?php if($info = $this->getInfo()): ?>
+    <?php $additional = $info->getAdditionalInformation() ?>
+    <div class="hor-scroll">
+        <table cellspacing="0" class="form-list">
+            <tbody>
+            <tr>
+                <td class="label"><label>Status</label></td>
+                <td class="value"><?php echo (isset($additional['status']))? $additional['status'] : '' ?></td>
+            </tr>
+            <tr>
+                <td class="label"><label>Processo</label></td>
+                <td class="value"><?php echo (isset($additional['process']))? $additional['process'] : '' ?></td>
+            </tr>
+            <?php if(isset($additional['link'])){ ?>
+                <tr>
+                    <td class="label"><label>Link</label></td>
+                    <td class="value"><a href="<?php echo $additional['link'] ?>">Boleto Bancário</a></td>
+                </tr>
+            <?php } ?>
+            <tr>
+                <td class="label"><label>Vencimento</label></td>
+                <td class="value"><?php echo (isset($additional['expiration']))? Mage::helper('core')->formatDate($additional['expiration']) : '' ?></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+<?php endif; ?>

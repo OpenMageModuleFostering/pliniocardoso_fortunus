@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <checkout_onepage_success translate="label">
+        <label>One Page Checkout Success</label>
+        <reference name="content">
+            <block type="checkout/onepage_success" name="checkout.success.fortunus" after="checkout.success" template="pliniocardoso_fortunus/checkout/success.phtml"/>
+        </reference>
+    </checkout_onepage_success>
+</layout>

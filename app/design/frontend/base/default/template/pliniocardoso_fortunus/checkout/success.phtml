@@ -1,0 +1,16 @@
+<?php
+    $order = Mage::getModel('sales/order')->loadByIncrementId($this->getOrderId());
+    $addtional = $order->getPayment()->getAdditionalInformation();
+?>
+
+<div class="page-title">
+    <h1>BOLETO BANCÁRIO</h1>
+</div>
+
+<?php if(isset($addtional['link'])){ ?>
+    <span><a href="<?php echo $addtional['link'] ?>" target="_blank">Clique aqui</a> para imprimir o boleto bancário</span>
+    <iframe src="<?php echo $addtional['link'] ?>" width="680" height="1000" frameborder="0"></iframe>
+<?php } else { ?>
+    <h2 class="sub-title">Ocorreu um erro ao gerar seu boleto bancário, entre em contato conosco.</h2>
+<?php } ?>
+
